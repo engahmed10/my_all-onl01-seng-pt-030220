@@ -6,7 +6,8 @@ def my_all?(collection)
   while count <collection.length
     block_return_values << yield(collection[count])
   count +=1
-end
+  end
+    block_return_values 
 end
 
 my_all?([1,2,3]) { |i|
